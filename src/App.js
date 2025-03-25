@@ -5,7 +5,7 @@ import axios from "axios";
 import Switch from "react-switch";
 
 // ✅ Replace with your actual Unsplash API Key
-const UNSPLASH_ACCESS_KEY = "iqQIdpOS6PnymjIlCu97K0xL1pjdQ9TSJnnL2WGfRCg";
+const UNSPLASH_ACCESS_KEY = process.env.REACT_APP_UNSPLASH_ACCESS_KEY;
 
 // ✅ Function to fetch images & descriptions from Unsplash API
 const fetchImage = async (placeName) => {
